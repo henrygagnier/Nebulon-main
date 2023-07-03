@@ -277,56 +277,83 @@ nav ul {
 	padding-right: 5px;
 }
 .containernft {
-	background-image: url(https://cdn.discordapp.com/attachments/1113919814176624750/1125219261078585555/asphalt-road-top-view-highway-1248828.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height:auto;
+  background-image: url(https://cdn.discordapp.com/attachments/1113919814176624750/1125219261078585555/asphalt-road-top-view-highway-1248828.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
 }
+
 .textnft {
-	color: white;
-	width: 50%;
+  color: white;
+  width: 50%;
 }
+
 .imgnft {
-	width: auto;
+  width: auto;
 }
+
 .containernft2 {
-	display:flex;
-	padding: 25px;
-	padding-top: 25px;
+  display: flex;
+  padding: 25px;
+  padding-top: 25px;
 }
+
 .overlay {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(255, 255, 255, 0.65));
-	height: 100%;
-	padding-bottom: 125px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(255, 255, 255, 0.65));
+  height: 100%;
+  padding-bottom: 125px;
 }
+
 .subheading {
-	opacity: 100%;
-	color: rgba(255, 183, 0, 0.9);
-	font-family: 'Bebas Neue', sans-serif;
-	font-size: 1.5em;
-	margin-bottom: 0px;
+  opacity: 100%;
+  color: rgba(255, 183, 0, 0.9);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0px;
 }
+
 .headingnfts {
-	font-family: 'Bebas Neue', sans-serif;
-	font-size: 3em;
-	margin-top: 0px;
-	margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
+
 .notinuse {
-	padding: 12px;
-	margin-top: 20px;
-	background-color: rgb(255, 177, 0);
-	border: none;
-	font-size: 1.25em;
-	font-family: 'Space Grotesk', sans-serif;
-	cursor: not-allowed;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: rgb(255, 177, 0);
+  border: none;
+  font-size: 1.25em;
+  font-family: 'Space Grotesk', sans-serif;
+  cursor: not-allowed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
+
 .notinuse:hover {
-	background-color: rgb(227, 159, 1);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(227, 159, 1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 767px) {
+  .containernft2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .notinuse {
+    margin-bottom: 75px;
+  }
+  .textnft {
+    width: 100%;
+  }
+
+  .imgnft {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
 .whitecolor {
   color: black;
 }
