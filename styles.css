@@ -337,6 +337,22 @@ nav ul {
   background-color: rgb(227, 159, 1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+.notinuse2 {
+  padding: 12px;
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(35, 53, 255);
+  border: none;
+  font-size: 1.25em;
+  font-family: 'Space Grotesk', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.notinuse2:hover {
+  background-color: rgb(25, 42, 224);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 767px) {
   .containernft2 {
@@ -358,4 +374,102 @@ nav ul {
 
 .whitecolor {
   color: black;
+}
+.roadmap {
+  color: white;
+  background-color: rgb(18, 14, 56);
+  display: flex;
+  padding: 50px;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  margin: 100px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #4285f4;
+  top: 0;
+  bottom: 0;
+  left: 75%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #4285f4;
+  border-radius: 50%;
+  top: 0;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-content {
+  position: relative;
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-left: -5%;
+}
+
+.timeline-content h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+}
+.timeline {
+ width: 50%;
+display: inline;
+margin-left: 10%;
+}
+.roadmaptext {
+  width: 50%;
+}
+.roadmapsheading {
+  opacity: 70%;
+  color:#001eff;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.roadmapheading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+@media (max-width: 800px) {
+.timeline {
+  display: block;
+  width: 100%;
+}
+
+.roadmaptext {
+  width: 100%;
+  display: block;
+}
+.roadmap {
+  display: block;
+}
+.astronaut {
+  width: 100%;
+}
 }

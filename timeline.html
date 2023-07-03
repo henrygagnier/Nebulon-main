@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Interactive Roadmap/Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .timeline {
+      max-width: 800px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .timeline__event {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .timeline__event:hover {
+      opacity: 1;
+    }
+
+    .timeline__date {
+      flex-shrink: 0;
+      width: 100px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .timeline__content {
+      margin-left: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+
+    .timeline__content.open {
+      display: block;
+    }
+
+    .timeline__content h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .timeline__content p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .timeline__line {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #ccc;
+      left: 50px;
+      top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .timeline__event {
+        flex-direction: column;
+      }
+
+      .timeline__date {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .timeline__content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline">
+    <div class="timeline__event" onclick="toggleEvent(this)">
+      <div class="timeline__date">2023</div>
+      <div class="timeline__content">
+        <h3>Event 1</h3>
+        <p>Description of event 1.</p>
+      </div>
+      <div class="timeline__line"></div>
+    </div>
+    <div class="timeline__event" onclick="toggleEvent(this)">
+      <div class="timeline__date">2024</div>
+      <div class="timeline__content">
+        <h3>Event 2</h3>
+        <p>Description of event 2.</p>
+      </div>
+      <div class="timeline__line"></div>
+    </div>
+    <div class="timeline__event" onclick="toggleEvent(this)">
+      <div class="timeline__date">2025</div>
+      <div class="timeline__content">
+        <h3>Event 3</h3>
+        <p>Description of event 3.</p>
+      </div>
+      <div class="timeline__line"></div>
+    </div>
+    <!-- Add more events here -->
+  </div>
+
+  <script>
+    function toggleEvent(event) {
+      const content = event.querySelector('.timeline__content');
+      content.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
