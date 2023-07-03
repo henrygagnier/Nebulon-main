@@ -215,3 +215,55 @@ body {
    font-style: italic;
    padding-right: 5px;
 }
+.containernft {
+  background-image: url(https://www.crushpixel.com/big-static13/preview4/asphalt-road-top-view-highway-1248828.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+}
+.textnft {
+  color: white;
+  width: 50%;
+}
+.imgnft {
+  width: 50%;
+}
+.containernft2 {
+
+  display:flex;
+  padding: 25px;
+  padding-top: 25px;
+}
+.overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(255, 255, 255, 0.65));
+  height: 100%;
+  padding-bottom: 125px;
+}
+.subheading {
+  opacity: 100%;
+  color: rgba(255, 183, 0, 0.9);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+.headingnfts {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.notinuse {
+  padding: 12px;
+  margin-top: 20px;
+  background-color: rgb(255, 177, 0);
+  border: none;
+  font-size: 1.25em;
+  font-family: 'Space Grotesk', sans-serif;
+  cursor: not-allowed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; 
+}
+.notinuse:hover {
+  background-color: rgb(227, 159, 1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
