@@ -13,7 +13,6 @@
     <title>Nebulon</title>
     <script>
   window.onload = function() {
-    // Toggle the menu on mobile
     var menuIcon = document.querySelector('.menu-icon');
     var menu = document.querySelector('nav ul');
     if (menuIcon && menu) {
@@ -28,7 +27,7 @@
           menuIcon.style.position = 'absolute';
           setTimeout(function() {
             menu.style.visibility = 'hidden';
-          }, 300); // Wait for the animation to complete
+          }, 300);
         } else {
           menuIcon.classList.add('open');
           menu.classList.add('show-menu');

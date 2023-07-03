@@ -46,7 +46,6 @@ body {
 	text-decoration: none;
 } 
 
-/* Additional styles for responsiveness */
 @media (max-width: 500px) {
 	.navbar {
 		flex-direction: column;
@@ -55,7 +54,7 @@ body {
 
 	.navbar ul {
 		flex-direction: column;
-		display: none; /* Hide the menu by default on mobile */
+		display: none;
 	}
 
 	.navbar li {
@@ -248,7 +247,6 @@ nav ul {
 	margin-bottom: 0;
 	padding: 0px 20px 20px 20px;
 }
-/* Media query for screens up to 768px */
 @media (max-width: 768px) {
 	.row {
 		flex-direction: column;
