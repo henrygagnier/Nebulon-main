@@ -11,12 +11,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Lexend+Peta&family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/74d146c649.js" crossorigin="anonymous"></script>
   <title>Nebulon</title>
+  <script>
+window.onload = function() {
+  // Toggle the menu on mobile
+  var menuIcon = document.querySelector('.menu-icon');
+  var menu = document.querySelector('nav ul');
+  if (menuIcon && menu) {
+    menuIcon.addEventListener('click', function() {
+      if (menu.classList.contains('show-menu')) {
+        menuIcon.classList.remove('open');
+        menu.classList.remove('show-menu');
+        menu.style.animation = 'fadeOutMenu 0.3s';
+        menu.style.opacity = 0;
+        menu.style.pointerEvents = 'none';
+        menuIcon.style.color = 'white';
+        menuIcon.style.position = 'absolute';
+        setTimeout(function() {
+          menu.style.visibility = 'hidden';
+        }, 300); // Wait for the animation to complete
+      } else {
+        menuIcon.classList.add('open');
+        menu.classList.add('show-menu');
+        menu.style.animation = 'fadeInMenu 0.3s';
+        menu.style.opacity = 1;
+        
+        menuIcon.style.position = 'fixed';
+        menu.style.pointerEvents = 'auto';
+        menuIcon.style.color = 'black';
+        menu.style.visibility = 'visible';
+      }
+    });
+  }
+};
+
+
+
+  </script>
 </head>
 
 <body>
   <div class="container">
     <nav class="navbar">
-      <h1 class="navbar-brand">Nebulon</h1>
+      <div class="navbar-header">
+        <h1 class="navbar-brand">Nebulon</h1>
+        <div class="menu-icon">&#9776;</div>
+      </div>
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./nfts.html">Projects</a></li>
@@ -81,18 +120,14 @@
         </b><img src="ph.png" class="flag-image" alt="Philippines"></img>
         <p>A talented young  who can manage any graphic design related responsibilities. I've been designing for four years, and I continue to produce excellent work that meets the requirements of individuals I work with.  I'm a graduating college student majoring in multimedia arts, and I'm still eager to learn and advance.</p>
       </div>
+      <div class="boxteam">
+        <p class="role">Anything</p>
+        <b>
+          <p class="inline">You</p>
+        </b><img src="globe.png" class="flag-image" alt="World"></img>
+        <p>Would you like to work at Nebulon? Join our community discord to view open positions and possibly become the newest addition to the team!</p>
+      </div>
     </div>
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    </script>
   </div>
   <div class="containernews" >
     <center>
@@ -133,6 +168,31 @@
     <a href="https://discord.gg/CZR5kWJwNG" target="_blank"><i class="fa-brands fa-discord" style="color: #ffffff;"></i></a>
   </center>
   </div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('.menu-icon');
+        console.log('hi')
+        if (menu.classList.contains('show-menu')) {
+        menuIcon.classList.remove('open');
+        menu.classList.remove('show-menu');
+        menu.style.animation = 'fadeOutMenu 0.3s';
+        menu.style.opacity = 0;
+        menu.style.pointerEvents = 'none';
+        menuIcon.style.color = 'white';
+        menuIcon.style.position = 'absolute';
+        setTimeout(function() {
+          menu.style.visibility = 'hidden';
+        }, 300); // Wait for the animation to complete
+      }
+          document.querySelector('#news').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
