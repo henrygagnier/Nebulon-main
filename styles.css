@@ -8,6 +8,7 @@ body {
 .menu-icon {
   transition: transform 0.3s;
   display: none;
+  font-size: 1.25em;
 }
 
 .menu-icon.open {
@@ -274,6 +275,7 @@ nav ul {
 .copyright {
 	padding-left: 1px;
 	font-style: italic;
+  display: inline-block;
 	padding-right: 5px;
 }
 .containernft {

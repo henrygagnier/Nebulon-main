@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Roadmap/Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .timeline__event {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline__event:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #ccc;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    .timeline__event:last-child:before {
+      display: none;
+    }
+
+    .timeline__date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .timeline__content {
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline__content h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .timeline__content p {
+      font-size: 14px;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline">
+    <div class="timeline__event">
+      <div class="timeline__date">2023</div>
+      <div class="timeline__content">
+        <h3>Event 1</h3>
+        <p>Description of event 1.</p>
+      </div>
+    </div>
+    <div class="timeline__event">
+      <div class="timeline__date">2024</div>
+      <div class="timeline__content">
+        <h3>Event 2</h3>
+        <p>Description of event 2.</p>
+      </div>
+    </div>
+    <div class="timeline__event">
+      <div class="timeline__date">2025</div>
+      <div class="timeline__content">
+        <h3>Event 3</h3>
+        <p>Description of event 3.</p>
+      </div>
+    </div>
+    <!-- Add more events here -->
+  </div>
+</body>
+</html>
