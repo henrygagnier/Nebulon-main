@@ -528,3 +528,25 @@ margin-left: 10%;
 .carimage {
 	width: 100%;
 }
+@media (max-width: 500px) {
+	.techcolumns {
+		display: block;
+	}
+	.techcolumn {
+		width: 100%;
+	}
+	.techcdesc {
+		width: 95%;
+		font-size: 1.1em;
+	}
+	.techheading {
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 3em;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.techdesc {
+		width: 90%;
+		font-size: 1.1em;
+	}
+}
